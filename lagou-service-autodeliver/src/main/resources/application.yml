@@ -1,2 +1,18 @@
 server:
   port: 8090
+spring:
+  application:
+    name: lagou-service-autodeliver
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://LagouCloudEurekaServerA:8761/eureka/,http://LagouCloudEurekaServerB:8762/eureka/
+  instance:
+    prefer-ip-address: true   #服务器实例中显示IP
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+    metadata-map:
+      #自定义元数据（kv自定义）
+      cluster: cl1
+      region: rn1
