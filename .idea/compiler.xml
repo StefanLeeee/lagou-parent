@@ -8,12 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lagou-service-common" />
         <module name="lagou-service-autodeliver" />
+        <module name="lagou-cloudeureka-server-8761" />
+        <module name="lagou-cloudeureka-server-8762" />
         <module name="lagou-service-resume" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lagou-cloudeureka-server-8761" options="-parameters" />
+      <module name="lagou-cloudeureka-server-8762" options="-parameters" />
       <module name="lagou-service-autodeliver" options="-parameters" />
       <module name="lagou-service-common" options="-parameters" />
       <module name="lagou-service-resume" options="-parameters" />

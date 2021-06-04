@@ -19,11 +19,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <!--eureka client 客户端依赖引入-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
-<!--        </dependency>-->
+<!--        eureka client 客户端依赖引入-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
 
 
 <!--        &lt;!&ndash;Config 客户端依赖&ndash;&gt;-->

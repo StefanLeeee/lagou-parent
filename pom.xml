@@ -11,7 +11,9 @@
         <module>lagou-service-common</module>
         <module>lagou-service-resume</module>
         <module>lagou-service-autodeliver</module>
-        <!--        <module>lagou-service-autodeliver-8090</module>-->
+        <module>lagou-cloudeureka-server-8761</module>
+        <module>lagou-cloudeureka-server-8762</module>
+<!--        <module>lagou-service-autodeliver-8090</module>-->
 <!--        <module>lagou-service-autodeliver-8091</module>-->
 <!--        <module>lagou-service-resume-8080</module>-->
 <!--        <module>lagou-service-resume-8081</module>-->
@@ -114,6 +116,10 @@
         </dependency>
         <!--引入Jaxb，结束-->
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+        </dependency>
 
         <!--&lt;!&ndash;spring cloud commons模块引入&ndash;&gt;
         <dependency>
