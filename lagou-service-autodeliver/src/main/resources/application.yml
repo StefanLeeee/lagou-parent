@@ -16,3 +16,14 @@ eureka:
       #自定义元数据（kv自定义）
       cluster: cl1
       region: rn1
+
+#Springboot中暴露健康检查等端点接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        #暴露健康接口细节
+  endpoint:
+    health:
+      show-details: always
