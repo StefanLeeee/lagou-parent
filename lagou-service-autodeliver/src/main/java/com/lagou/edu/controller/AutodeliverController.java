@@ -115,9 +115,6 @@ public class AutodeliverController {
             commandProperties = {
                     // 每一个属性都是一个HystrixProperty
                     @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value="2000")
-
-
-
                     // hystrix高级配置，定制工作过程细节
                     ,
                     // 统计时间窗口定义
