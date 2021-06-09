@@ -18,6 +18,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
                         //说明：从SpringCloud的Edgware版本开始，不加注解也ok，但是建议加上
 public class LagouResumeApplication8081 {
     public static void main(String[] args) {
-        SpringApplication.run(LagouResumeApplication8080.class, args);
+        SpringApplication.run(LagouResumeApplication8081.class, args);
     }
 }

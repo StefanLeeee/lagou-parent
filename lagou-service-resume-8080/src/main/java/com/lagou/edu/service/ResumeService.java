@@ -2,6 +2,7 @@ package com.lagou.edu.service;
 
 
 import com.lagou.edu.pojo.Resume;
+import org.hibernate.tool.schema.internal.exec.ScriptTargetOutputToFile;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,4 +13,7 @@ import org.springframework.stereotype.Service;
 
 public interface ResumeService {
     Resume findDefaultResumeByUserId(Long userId);
+
+
 }
+
