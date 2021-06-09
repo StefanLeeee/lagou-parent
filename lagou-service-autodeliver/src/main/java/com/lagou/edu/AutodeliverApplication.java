@@ -2,6 +2,7 @@ package com.lagou.edu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +14,14 @@ import org.springframework.web.client.RestTemplate;
  * @description
  */
 
+/**
+ * 注解简化写法
+ * @SpringCloudApplication = @SpringBootApplication + @EnableDiscoveryCLient + @EnableCircuitBreaker
+ */
+
 @SpringBootApplication
-@EnableDiscoveryClient
+@EnableDiscoveryClient   //开启服务发现
+@EnableCircuitBreaker
 public class AutodeliverApplication {
     public static void main(String[] args) {
         SpringApplication.run(AutodeliverApplication.class, args);

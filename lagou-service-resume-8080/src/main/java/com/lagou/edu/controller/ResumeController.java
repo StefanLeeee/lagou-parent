@@ -27,12 +27,23 @@ public class ResumeController {
     private Integer port;
 
 
+
+    /**
+     * 获取简历开放状态的url：/resume/openstate/{userId}
+     * @param userId ⽤户id
+     * @return 0-关闭，1-打开，2-简历未达到投放标准被动关闭 3-从未设置过开放简历
+     */
     @GetMapping("/openstate/{userId}")
     public Integer findDefaultResumeState(@PathVariable Long userId) {
 
-        System.out.println(userId);
-//        System.out.println(resumeService.findDefaultResumeByUserId(userId).getIsOpenResume());
-//        return resumeService.findDefaultResumeByUserId(userId).getIsOpenResume();
+        //模拟请求超时，触发服务消费者熔断降级
+        try{
+            Thread.sleep(3000);
+
+        }catch(InterruptedException e) {
+            e.printStackTrace();
+
+        }
         System.out.println("===============>  8080  ");
         return port;
     }
