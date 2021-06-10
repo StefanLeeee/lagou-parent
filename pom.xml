@@ -15,6 +15,7 @@
         <module>lagou-cloudeureka-server-8761</module>
         <module>lagou-cloudeureka-server-8762</module>
         <module>lagou-cloud-hystrix-dashboard-9000</module>
+        <module>lagou-cloud-hystrix-turbine-9001</module>
         <!--        <module>lagou-service-autodeliver-8090</module>-->
 <!--        <module>lagou-service-autodeliver-8091</module>-->
 <!--        <module>lagou-service-resume-8080</module>-->

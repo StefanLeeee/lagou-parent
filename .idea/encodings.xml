@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/lagou-cloud-hystrix-dashboard-9000/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou-cloud-hystrix-turbine-9001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lagou-cloudeureka-server-8761/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lagou-cloudeureka-server-8762/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lagou-service-autodeliver/src/main/java" charset="UTF-8" />
